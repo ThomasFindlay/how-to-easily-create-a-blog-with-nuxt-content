@@ -5,7 +5,7 @@
     <main class="w-full">
       <h1 class="text-2xl font-semibold mb-6">My awesome blog</h1>
       <section>
-        <form class="flex flex-col space-y-2 mb-6">
+        <form class="flex flex-col space-y-2 mb-4">
           <label for="search-blogs" class>Search blogs</label>
           <input
             id="search-blogs"
@@ -16,7 +16,7 @@
         </form>
       </section>
       <section class="space-y-4 divide-y">
-        <article v-for="post of posts" :key="post.slug" class="-mt-4 pt-4">
+        <article v-for="post of posts" :key="post.slug" class="pt-4">
           <h2 class="text-lg mb-2 text-blue-700 hover:text-blue-800">
             <nuxt-link :to="`/blog/${post.slug}`">
               {{ post.title }}
