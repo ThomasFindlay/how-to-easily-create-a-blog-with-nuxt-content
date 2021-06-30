@@ -5,7 +5,7 @@
     <main class="w-full">
       <h1 class="text-2xl font-semibold mb-6">My awesome blog</h1>
       <section>
-        <form class="flex flex-col space-y-2 mb-4">
+        <form class="flex flex-col space-y-2 mb-4" autocomplete="off">
           <label for="search-blogs" class>Search blogs</label>
           <input
             id="search-blogs"
